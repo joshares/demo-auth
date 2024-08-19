@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+  }
+}
+.bg-backLuxury-blur {
+  background: linear-gradient(
+      rgba(220, 220, 220, 0.1),
+      rgba(220, 220, 220, 220)
+    ),
+    url("/handLuxury.png");
+  background-size: cover;
+  background-position: center;
+}
+
+:not(.default-scroll)::-webkit-scrollbar {
+  background-color: rgba(10, 108, 255, 0.1);
+  width: 0.35rem;
+}
+:not(.default-scroll)::-webkit-scrollbar-thumb {
+  background-color: rgba(10, 108, 255, 0.7);
+}
+:not(.default-scroll)::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(10, 108, 255, 0.7);
+}
